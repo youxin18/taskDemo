@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#1A1A25">
+
+    <EditText
+        android:id="@+id/ed_http"
+        android:layout_marginTop="100dp"
+        android:layout_width="350dp"
+        android:layout_height="90dp"
+        android:background="@drawable/kuang_bg"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="20dp"
+        android:hint="请输入局域网地址"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        />
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:text="请求地址"
+        android:gravity="center"
+        android:layout_marginTop="80dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:background="#2B430E"
+        android:layout_below="@+id/ed_http"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/textview"
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:hint="局域网接口返回结果"/>
+
+
+</RelativeLayout>
